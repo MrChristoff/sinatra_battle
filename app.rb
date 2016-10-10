@@ -13,3 +13,8 @@ get '/named-cat' do
   p @name = params[:name]
   erb(:index)
 end
+
+get '/name_test' do
+  @name = params[:name]
+  erb(:name_test)
+end
