@@ -5,5 +5,6 @@ get '/' do
 end
 
 get '/cat' do
+  @random_name = ["Earl", "Billy-Bob", "Gordon"].sample
   erb(:index)
 end
